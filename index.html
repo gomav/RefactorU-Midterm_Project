@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sazon</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+</head>
+
+<body>
+
+<div id="site">
+	<header id="masthead">
+		<h1><a class = 'tagline' href='admin/index.html'>Admin</a></h1>
+	</header>
+	<div id="content">
+		<div id="products">
+			<ul>
+				<li>
+					<div class="product-image">
+						<img src="images/arrozcubano.png" alt="" />
+					</div>
+					<div class="product-description" data-name="Arroz Cubano" data-price="7.00">
+						<h3 class="product-name">Arroz Cubano</h3>
+						<p class="product-price">$7.00</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-1">Quantity</label>
+								<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
+
+				<li>
+					<div class="product-image">
+						<img src="images/camote.png" alt="" />
+					</div>
+					<div class="product-description" data-name="Camote Frito" data-price="5.00">
+						<h3 class="product-name">Camote Frito</h3>
+						<p class="product-price">$5.00</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
+
+				<li>
+					<div class="product-image">
+						<img src="images/wonton.png" alt="" />
+					</div>
+					<div class="product-description" data-name="Wonton Frito" data-price="5.00">
+						<h3 class="product-name">Wonto Frito</h3>
+						<p class="product-price">$5.00</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-3">Quantity</label>
+								<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
+
+
+
+			</ul>
+		</div>
+	</div>
+
+
+
+</div>
+
+<div id='template'>
+	<div id='menu-library-tpl'>
+		<!-- <h2 class='library-name'>Library Name</h2> -->
+		<!-- <form class='new-menu-form'>
+			<div class='icontainer'>
+			<input class='abox' type='text' name='menu-title' placeholder="Item Name">
+			<textarea class='bbox' type='text' name='menu-description' style='width: 300px; height: 100px'placeholder='Item Description'></textarea>
+			<input class='cbox' type='text' name='item-price' placeholder = 'Item Price'>
+			</div>
+			<input class='sbutton' type='submit'>
+		</form> -->
+		<ul class='menu-list'></ul>
+	</div>
+	<div id='menu-tpl'>
+		<h4 class='menu-title'></h4>
+		<em class='menu-description'></em>
+		<em class='item-price'></em>
+	</div>
+	</div>
+</div>
+
+<footer id="site-info">
+		Copyright &copy; Sazon
+	</footer>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.shop.js"></script>
+<script src = 'admin/main.js'></script>
+
+</script>
+
+</body>
+</html>
